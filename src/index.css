@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ocean: #0F4C81;
+  --color-ocean-dark: #0A3258;
+  --color-ocean-light: #1665A5;
+  --color-royal: #2563EB;
+  --color-royal-dark: #1D4ED8;
+  --color-royal-light: #3B82F6;
+  --color-tropical: #14B8A6;
+  --color-tropical-dark: #0D9488;
+  --color-tropical-light: #2DD4BF;
+  --color-chalk: #F0F9FF;
+  --color-chalk-tint: #E0F2FE;
+  --color-obsidian: #0F172A;
+  --color-obsidian-muted: #334155;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+  :root {
+    --color-ocean: #0F4C81;
+    --color-royal: #2563EB;
+    --color-teal: #14B8A6;
+    --color-chalk: #F0F9FF;
+    --color-obsidian: #0F172A;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #F0F9FF;
+    color: #0F172A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Subtle ocean wave texture */
+.bg-ocean-pattern {
+  background-color: #F0F9FF;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(15, 76, 129, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(37, 99, 235, 0.07) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(20, 184, 166, 0.06) 0px, transparent 50%);
+}
+
+.bg-ocean-card {
+  background: linear-gradient(135deg, rgba(240, 249, 255, 0.9) 0%, rgba(255, 255, 255, 0.98) 100%);
+}
+
+/* Custom smooth scroll and reading utilities */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reader customized styles */
+.reader-content p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+}
+
+.reader-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.reader-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
